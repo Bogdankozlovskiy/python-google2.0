@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<title>
+			My books
+		</title>
+	</head>
+	<body>
+		<h1>Hello my Name is {{ name }}</h1>
+		<hr>
+		{% for u in users %}
+			{% if u.0 == 'H' %}
+				<h4>{{ u }} - geny</h4>
+			{% else %}
+				<h4>hello user {{ u }}</h4>
+			{% endif %}
+		{% endfor %}
+	</body>
+</html>
