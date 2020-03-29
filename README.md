@@ -1,6 +1,6 @@
 # python-google2.0
 * sudo pip3 install virtualenv
-* sudo pip3 install supervisor
+* sudo apt-get install supervisor
 * virtualenv --python=python3.5 myvenv
 * source myvenv/bin/activate
 * pip install -r requirements.pip
