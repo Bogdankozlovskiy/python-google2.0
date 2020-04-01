@@ -6,7 +6,7 @@ class Author(models.Model):
         db_table = "author"
         verbose_name = "Автор"
         verbose_name_plural = "Авторы"
-    
+
     name = models.CharField(
             max_length=150,
             db_index=True,
@@ -25,6 +25,9 @@ class Genre(models.Model):
 
     name = models.CharField(max_length=150, db_index=True)
 
+    def __str__(self):
+        return self.name
+
 
 class Book(models.Model):
     class Meta:
@@ -38,6 +41,9 @@ class Book(models.Model):
     book_genre = models.ForeignKey(Genre, on_delete=models.CASCADE)
     price = models.PositiveIntegerField(default=0)
 
+    def __str__(self):
+        return self.name
+
 
 class Comment(models.Model):
     class Meta:
@@ -50,3 +56,6 @@ class Comment(models.Model):
             Book,
             on_delete=models.CASCADE,
             related_name="Comment")
+
+    def __str__(self):
+        return self.text[:10] + "..."
