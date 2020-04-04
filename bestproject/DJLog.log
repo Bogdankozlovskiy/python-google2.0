@@ -379,3 +379,8 @@ DETAIL:  Failing row contains (9, dfgfgdfg, null).
 2020/04/01 21:48:01 INFO [django.server:12365:"GET /world/ HTTP/1.0" 200 1978]
 2020/04/01 21:48:04 INFO [django.server:12365:"POST /just_url/1/ HTTP/1.0" 302 0]
 2020/04/01 21:48:04 INFO [django.server:12365:"GET /world/ HTTP/1.0" 200 2000]
+2020/04/01 23:26:54 ERROR [django:12413:hello error]
+2020/04/01 23:27:01 WARNING [django.request:12413:Not Found: /django/bookshop]
+2020/04/01 23:27:09 WARNING [django.request:12412:Not Found: /django/main]
+2020/04/02 22:24:38 ERROR [django:12413:hello error]
+2020/04/03 22:15:39 ERROR [django:12412:hello error]
